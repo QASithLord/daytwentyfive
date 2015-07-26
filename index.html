@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <link href="normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url("images/mountain.jpg");
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: #f00;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+      }
+      li {
+          display: block;
+          padding: 5px;
+        
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/cyndy2.png">
+    <h1>Cyndy's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Vacation Pictures and Stories</a></li>
+      <li><a href="#">Beagle Pictures and Stories</a></li>
+    </ul>
+  </header>
+  <article>
+  <h2>Elephant Seals are awesome.</h2>
+  <p>Yesterday I hiked 2 miles to the beach to see elephant seals at Año Nuevo beach.</p>
+   <button>Like</button>
+  </article>
+  <article>
+  <h2>Santa Cruz Boardwalk</h2>
+  <p>I played skee ball and ate fried twinkies and oreos. Yesterday they were delicious. Today, I may regret it just a little bit.</p>
+   <button>Like</button>
+  </article>
+  <article>
+  <h2>Byron at daycare</h2>
+  <p>Byron is having a phenomenal time at daycare. I'm not sure she misses me at all./p>
+  <button>Like</button>
+</article>
+<script>
+ $("button").on("click", function() {
+   alert("clicked!")
+ });
+</script>
+</body>
